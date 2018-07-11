@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2ActivityDetalles"
+    android:padding="20dp"
+    android:id="@+id/layoutDetalles">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalles Contacto"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    //layout de elementos de nombre
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="65dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"/>
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:text="nombre"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    //layout de elementos de edad
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="115dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Edad:"/>
+        <TextView
+            android:id="@+id/textViewEdad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            />
+    </LinearLayout>
+
+    //layout de elementos de email
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="165dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Email:"/>
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"/>
+
+    </LinearLayout>
+
+    //layout de elementos de phone
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="215dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Phone:"/>
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    //layout de elementos de nacionalidad
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="265dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Provincia:"/>
+        <TextView
+            android:id="@+id/textViewProvincia"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="320dp">
+
+        <Button
+            android:id="@+id/botonRegresar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:text="Regresar"/>
+
+        <Button
+            android:id="@+id/botonEliminar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:text="Eliminar"/>
+
+        <Button
+            android:id="@+id/botonRespaldar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:text="Respaldar"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2ActivityPreference"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajuste de Preferencias"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    //layout de elementos de tamano letra
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="45dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Color de fondo:"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbHoloBlueDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holo blue dark"
+                android:onClick="onRadioButtonColoresClicked"/>
+
+            <RadioButton
+                android:id="@+id/rbHoloOrangeDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holo orange dark"
+                android:onClick="onRadioButtonColoresClicked"/>
+            <RadioButton
+                android:id="@+id/rbHoloRedLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holo red light"
+                android:onClick="onRadioButtonColoresClicked"/>
+            <RadioButton
+                android:id="@+id/rbWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White"
+                android:onClick="onRadioButtonColoresClicked"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    //layout de elementos de color de fondo pantalla
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:text="Tamaño de letra:"/>
+        <Spinner
+            android:id="@+id/spinnerTamanoLetra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    //layout de elementos de habilitar boton eliminar
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="260dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Habilitar botón eliminar:"/>
+        <Switch
+            android:id="@+id/switchbtnEliminar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"/>
+
+    </LinearLayout>
+
+    //layout de elementos de cambiar vista columnas o lista
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="310dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Vista de la lista:"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbVistaLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lista"
+                android:onClick="onRadioButtonListaClicked"/>
+            <RadioButton
+                android:id="@+id/rbVistaGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grid"
+                android:onClick="onRadioButtonListaClicked"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="Guardar preferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
